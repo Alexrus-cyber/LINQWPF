@@ -1,0 +1,20 @@
+﻿<Page x:Class="proekt.Test5"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:proekt"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Test5">
+    <Grid Background="LightYellow">
+        <TextBlock Width="657" Height="100" Margin="73,10,70,340" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="Black"><Run Text="                "/><Run Text="Вопрос 5. Передвигает элементы на передний план"/></TextBlock>
+        <StackPanel  x:Name="stackPanel" Height="100" Margin="329,165,300,185">
+            <RadioButton x:Name="testсс" Content="VerticalAligment" Checked="testcc_Checked"/>
+            <RadioButton x:Name="testv"  Content="FirstTag"  Checked="RadioButton_Checked" />
+            <RadioButton x:Name="testc"  Content="Panel.ZIndex" Checked="testc_Checked" />
+        </StackPanel>
+        <Button Panel.ZIndex="0" x:Name="Next" Content="Next" Height="50" Margin="522,287,135,113" Click="Next_Click"/>
+        <Button Panel.ZIndex="0" x:Name="Back" Content="Back" Height="50" Margin="107,287,550,113" Click="Back_Click"/>
+    </Grid>
+</Page>
